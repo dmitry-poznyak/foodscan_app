@@ -1,0 +1,18 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    Label:
+        id: label
+        text: "Загрузите фото блюда"
+
+    Image:
+        id: img
+        size_hint: 1, 0.5
+
+    Label:
+        id: result_label
+        text: "Результат: "
+
+    Button:
+        text: "Выбрать изображение"
+        on_press: app.choose_file()
